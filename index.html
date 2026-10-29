@@ -1,2 +1,12 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Map Explains</title></head><body style="font-family:Georgia,serif;max-width:680px;margin:32px auto;padding:0 16px"><h1>Map Explains</h1><p>Original geography and history Shorts. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Map Explains</title>
+<style>body{font-family:Georgia,serif;max-width:680px;margin:32px auto;padding:0 16px;line-height:1.6}a.btn{display:inline-block;background:#000;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin:12px 0}.m{color:#666;font-size:.9rem}</style></head>
+<body><h1>Map Explains</h1>
+<p>A private publishing tool for the TikTok account @the_map_explains. It sends the owner's own geography and history videos to that account.</p>
+<p><a class="btn" id="go" href="#">Connect TikTok account</a></p>
+<p class="m">The app asks for permission to read the account name and avatar (user.info.basic) and to post videos to the account (video.publish).</p>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+<script>
+var u='https://www.tiktok.com/v2/auth/authorize/?client_key=awi1syjpb4hkz9v9&scope='+encodeURIComponent('user.info.basic,video.publish')+'&response_type=code&redirect_uri='+encodeURIComponent('https://simonhay91.github.io/map-explains-legal/callback.html')+'&state=mapexplains';
+document.getElementById('go').href=u;
+</script></body></html>

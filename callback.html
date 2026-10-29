@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Map Explains: TikTok connected</title>
+<style>body{font-family:Georgia,serif;max-width:680px;margin:32px auto;padding:0 16px;line-height:1.6}code{word-break:break-all;background:#eee;padding:2px 6px}</style></head>
+<body><h1>TikTok connected</h1>
+<p id="ok">Authorization received. The publishing tool can now post the owner's videos to this account.</p>
+<p id="err" hidden></p>
+<p><a href="index.html">Back</a></p>
+<script>
+var p=new URLSearchParams(location.search);
+if(p.get('error')){var e=document.getElementById('err');e.hidden=false;e.textContent='Authorization was not completed: '+p.get('error');document.getElementById('ok').hidden=true;document.querySelector('h1').textContent='Not connected';}
+</script></body></html>
