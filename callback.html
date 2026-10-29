@@ -4,8 +4,10 @@
 <body><h1>TikTok connected</h1>
 <p id="ok">Authorization received. The publishing tool can now post the owner's videos to this account.</p>
 <p id="err" hidden></p>
+<p id="codebox" hidden>Authorization code (copy it to the publishing tool):<br><code id="code"></code></p>
 <p><a href="index.html">Back</a></p>
 <script>
 var p=new URLSearchParams(location.search);
 if(p.get('error')){var e=document.getElementById('err');e.hidden=false;e.textContent='Authorization was not completed: '+p.get('error');document.getElementById('ok').hidden=true;document.querySelector('h1').textContent='Not connected';}
+else if(p.get('code')){document.getElementById('code').textContent=p.get('code');document.getElementById('codebox').hidden=false;}
 </script></body></html>
